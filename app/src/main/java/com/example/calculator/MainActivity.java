@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(inputNum()){
             double div=n1/(n2*1.0);
-            t1.setText(Double.toString(div));
+            t1.setText(String.format("%.2f",div));
         }
     }
 
@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         if(inputNum()){
             e1.setText("");
             e2.setText("");
+            t1.setText("");
         }
     }
 
